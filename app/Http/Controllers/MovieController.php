@@ -11,8 +11,7 @@ class MovieController extends Controller
     public function listMovie() {
         
         $movies =  Movie::all();
-        var_dump($movies);
-
-        return view('home', compact('movie'));
+        
+        return view('home', compact('movies'));
     }
 }
